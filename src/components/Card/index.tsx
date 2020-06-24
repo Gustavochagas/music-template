@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ImageStyled, CardStyled, TitleStyled, InfosStyled } from './styles';
+import { ImageStyled, CardStyled, TitleStyled, InfosStyled, BackgroundStyled } from './styles';
 
 interface CardProps {
   image: string,
@@ -8,10 +8,16 @@ interface CardProps {
   infos?: string
 }
 
-const Card = ({ image, title, infos }: CardProps) => {
+function Card({ image, title, infos }: CardProps) {
+  function handleClick() {
+    alert('click');
+  }
+
   return (
-    <CardStyled>
-      <ImageStyled url={image} />
+    <CardStyled onClick={handleClick}>
+      <BackgroundStyled>
+        <ImageStyled url={image} />
+      </BackgroundStyled>
       <TitleStyled>{title}</TitleStyled>
       <InfosStyled>{infos}</InfosStyled>
     </CardStyled>

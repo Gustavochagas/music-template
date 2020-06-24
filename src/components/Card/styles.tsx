@@ -2,5 +2,6 @@ export {
   ImageStyled,
   CardStyled,
   TitleStyled,
-  InfosStyled
+  InfosStyled,
+  BackgroundStyled
 } from "./stylesCard";

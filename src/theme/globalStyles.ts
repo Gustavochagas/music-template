@@ -13,6 +13,12 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Montserrat', sans-serif;
   }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-gap: 40px;
+    padding: 40px
+  }
 `;
 
 export default GlobalStyles;

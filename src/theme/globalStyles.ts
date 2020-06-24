@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+interface Props {
+  theme: any
+}
+
+const GlobalStyles = createGlobalStyle<Props>`
   * {
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Montserrat', sans-serif;
+    background-color: ${props => props.theme.colors.background}
   }
   .cards {
     display: grid;

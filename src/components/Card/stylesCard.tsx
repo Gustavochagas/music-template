@@ -19,7 +19,7 @@ export const BackgroundStyled = styled.div`
   box-shadow: 1px 1px 24px 0px rgba(206,206,206,1);
   overflow: hidden;
   width: 100%;
-  height: 170px;
+  height: 180px;
 `;
 
 export const TitleStyled = styled.h2`

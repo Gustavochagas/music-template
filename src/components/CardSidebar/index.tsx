@@ -1,11 +1,9 @@
 import React from 'react';
 
 import {
-  ImageStyled,
-  CardStyled,
-  TitleStyled,
-  InfosStyled,
-  BackgroundStyled
+  CardSidebarStyled,
+  BackgroundStyled,
+  ImageStyled
 } from './styles';
 
 interface CardProps {
@@ -14,20 +12,18 @@ interface CardProps {
   infos?: string
 }
 
-function Card({ image, title, infos }: CardProps) {
+function CardSidebar({ image, title, infos }: CardProps) {
   function handleClick() {
     alert('click');
   }
 
   return (
-    <CardStyled onClick={handleClick}>
+    <CardSidebarStyled onClick={handleClick}>
       <BackgroundStyled>
         <ImageStyled url={image} />
       </BackgroundStyled>
-      <TitleStyled>{title}</TitleStyled>
-      <InfosStyled>{infos}</InfosStyled>
-    </CardStyled>
+    </CardSidebarStyled>
   );
 }
 
-export default Card;
+export default CardSidebar;

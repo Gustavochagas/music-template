@@ -16,11 +16,14 @@ function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyles />
       <button onClick={() => setDarkMode(!darkMode)}>Change theme</button>
-      <div className="cards">
-        <Card image="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515368_10599.jpg" title="Red Hot Chili Peppers" infos="150K Total Songs" />
-        <Card image="https://yt3.ggpht.com/a/AATXAJzk6it5mIXYJslwwP32oEDI_IIrxq370p1P0w=s900-c-k-c0xffffffff-no-rj-mo" title="Twenty One Pilots" infos="100K Total Songs" />
+      <div className="app">
+        <div className="cards">
+          <Card image="https://cdn.playlists.net/images/playlists/image/medium/a5be6174c4294fbffd56111f8ca2d8d1.jpg" title="Rock" infos="150K Total Songs" />
+        </div>
+        <div className="sidebar">
+          <CardSidebar image="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515368_10599.jpg" title="Red Hot Chili Peppers" infos="150K Total Songs" />
+        </div>
       </div>
-      <CardSidebar image="https://yt3.ggpht.com/a/AATXAJzk6it5mIXYJslwwP32oEDI_IIrxq370p1P0w=s900-c-k-c0xffffffff-no-rj-mo" title="Red Hot Chili Peppers" infos="150K Total Songs" />
     </ThemeProvider>
   );
 }

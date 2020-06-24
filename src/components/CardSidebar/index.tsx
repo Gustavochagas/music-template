@@ -3,7 +3,10 @@ import React from 'react';
 import {
   CardSidebarStyled,
   BackgroundStyled,
-  ImageStyled
+  ImageStyled,
+  TitleStyled,
+  InfosStyled,
+  ContentStyled
 } from './styles';
 
 interface CardProps {
@@ -22,6 +25,10 @@ function CardSidebar({ image, title, infos }: CardProps) {
       <BackgroundStyled>
         <ImageStyled url={image} />
       </BackgroundStyled>
+      <ContentStyled>
+        <TitleStyled>{title}</TitleStyled>
+        <InfosStyled>{infos}</InfosStyled>
+      </ContentStyled>
     </CardSidebarStyled>
   );
 }

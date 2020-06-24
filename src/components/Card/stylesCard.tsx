@@ -31,7 +31,7 @@ export const TitleStyled = styled.h2`
 
 export const InfosStyled = styled.p`
   font-size: 0.8rem;
-  color: #b5b5b5;
+  color: #888888;
 `;
 
 export const CardStyled = styled.div`

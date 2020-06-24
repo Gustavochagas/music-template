@@ -19,11 +19,21 @@ const GlobalStyles = createGlobalStyle<Props>`
     transition: all .2s ease-in-out;
     background-color: ${props => props.theme.colors.background}
   }
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    grid-gap: 40px;
-    padding: 40px
+    grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
+    grid-gap: 50px;
+    padding: 40px 40px 0 0;
+    flex: 1;
+  }
+  .sidebar {
+    padding: 40px 0;
+    min-width: 300px;
   }
 `;
 

@@ -1,5 +1,8 @@
 export {
   CardSidebarStyled,
   ImageStyled,
-  BackgroundStyled
+  BackgroundStyled,
+  TitleStyled,
+  InfosStyled,
+  ContentStyled
 } from "./stylesCardSidebar";
